@@ -21,6 +21,7 @@ namespace Commander
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls(urls: "https://0.0.0.0:5001");
                 });
     }
 }
